@@ -27,7 +27,6 @@ class main(tk.Tk):
         self.button2 = tk.Button(self.canvas, text="Normal", command=lambda: self.set_difficulty(2))
         self.button3 = tk.Button(self.canvas, text="Hard", command=lambda: self.set_difficulty(3))
         self.button4 = tk.Button(self.canvas, text="Start", command=self.check_and_open_gui)
-        self.button5 = tk.Button(self.canvas, text="2 players", command=lambda: self.set_difficulty(4))
         self.button6 = tk.Button(self.canvas, text="alphaBita", command=lambda: self.set_difficulty(5))
         self.button7 = tk.Button(self.canvas, text="minimax", command=lambda: self.set_difficulty(6))
         
@@ -36,7 +35,6 @@ class main(tk.Tk):
         self.button1.place(relx=0.5, rely=0.3, anchor="center")
         self.button2.place(relx=0.5, rely=0.4, anchor="center")
         self.button3.place(relx=0.5, rely=0.5, anchor="center")
-        self.button5.place(relx=0.5, rely=0.8, anchor="center")
         self.button6.place(relx=0.5, rely=0.7, anchor="center")
         self.button7.place(relx=0.5, rely=0.6, anchor="center")
         self.button4.place(relx=0.5, rely=0.9, anchor="center")
@@ -66,8 +64,6 @@ class main(tk.Tk):
              subprocess.run(["python", "MX1_gui.py"])
             elif self.val == 3:
              subprocess.run(["python", "APH_gui.py"])
-            elif self.val == 4:
-             subprocess.run(["python", "gui.py"])
             elif self.val == 5:
              subprocess.run(["python", "AP_gui.py"])
             elif self.val == 6:
